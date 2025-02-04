@@ -1,0 +1,78 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    color: #ffffff;
+}
+
+.game-container{
+    width: 250px;
+    background-color:#084308 ;
+    padding: 20px;
+    margin: 30% 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#colorBox{
+    background-color: #08b908;
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 3px solid #fff;
+}
+
+.color-btn{
+    width: 80px;
+    height: 40px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.color-btn:hover{
+    transform: scale(1.1);
+}
+
+#gameStatus{
+    font-weight: bold;
+}
+
+#score{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#newGameButton, #hintButton{
+    border: none;
+    background: none;
+    background-color: #08b908;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+}
+
+#newGameButton:hover, #hintButton:hover{
+     background-color: #ffffff;
+     color: #084308;
+}
+
+@media  only screen and (min-width: 600px) {
+    .game-container{
+        min-width: 400px;
+    }
+}
+
+
+

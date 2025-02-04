@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Color Game</title>
+</head>
+<body>
+    <div class="game-container">
+        <!-- Game Instructions -->
+        <h1 data-testid="gameInstructions">Guess the corrrect color!</h1>
+
+        <!-- TArget Color Display -->
+        <div id="colorBox" data-testid="colorBox"></div>
+
+        <!-- Status Message -->
+        <p class="game-status" id="gameStatus" data-testid="gameStatus">Make a guess!</p>
+
+        <!-- color Options -->
+        <div class="color-options" data-testid="colorOptions">
+            <button class="color-btn" data-testid="colorOption"></button>
+            <button class="color-btn" data-testid="colorOption"></button>
+            <button class="color-btn" data-testid="colorOption"></button>
+            <button class="color-btn" data-testid="colorOption"></button>
+            <button class="color-btn" data-testid="colorOption"></button>
+            <button class="color-btn" data-testid="colorOption"></button> 
+        </div>
+
+        <!-- Score Counter -->
+        <p>Score: <span id="score" data-testid="score">0</span></p>
+
+        <!-- New Game Button -->
+        <button type="reset" id="newGameButton" data-testid="newGAmeButton">New Game</button>
+    <button id="hintButton">Hint</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
